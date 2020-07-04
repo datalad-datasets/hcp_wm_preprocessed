@@ -1,28 +1,53 @@
-# Get data from the Human Connectome Project Open Access dataset with DataLad
+# Get data from a subset (preprocessed working memory task data) from the Human Connectome Project Open Access dataset with DataLad
 
 [![made-with-datalad](https://www.datalad.org/badges/made_with.svg)](https://datalad.org)
 
-This dataset enables data retrieval with DataLad (0.12.2 or later) from the
-[HCP Open Access dataset](https://registry.opendata.aws/hcp-openaccess/) for users
+This dataset enables data retrieval with DataLad (0.12.2 or later) from a subset
+of the [HCP Open Access dataset](https://registry.opendata.aws/hcp-openaccess/) for users
 that accepted the WU-Minn HCP Consortium Open Access Data Use Terms and obtained
 valid AWS credentials via [db.humanconnectome.org](http://db.humanconnectome.org).
 
+## Preprocessed working memory data subset
+
+**Important**: For a DataLad dataset of the *full* HCP Open Access dataset,
+please go to [github.com/datalad-datasets/human-conntectome-project-openaccess](https://github.com/datalad-datasets/human-connectome-project-openaccess).
+
+This subset comprises the preprocessed working memory data files including
+motion regressors and EVs of each subject in the HCP Open Access dataset.
+Specifically, these files are
+
+```
+- <sub>/MNINonLinear/Results/tfMRI_WM_*/EVs/*.txt
+- <sub>/MNINonLinear/Results/tfMRI_WM_*/Movement_Regressors.txt
+- <sub>/MNINonLinear/Results/tfMRI_WM_*/tfMRI_WM_??.nii.gz
+- <sub>/MNINonLinear/Results/tfMRI_WM_*/tfMRI_WM_??_SBRef.nii.gz
+- <sub>/MNINonLinear/Results/tfMRI_WM_*/tfMRI_WM_*.fsf
+
+```
+
+The directory structure and the file names in this subset are kept identical to
+the full HCP dataset.
+
+The purpose of this dataset is to give easy access to a *single* dataset with
+the relevant data for the working memory task data.
+
 ## Human Connectome Project
 
-The Human [Connectome Project (HCP)](http://www.humanconnectomeproject.org/about/)
+The Human [Connectome Project
+(HCP)](http://www.humanconnectomeproject.org/about/)
 aims to construct a map of the complete structural and functional neural
 connections in vivo within and across individuals.
-
 Its 'WU-Minn HCP Open Access Data' data release includes high-resolution 3T MR
 scans from young healthy adult twins and non-twin siblings (ages 22-35) using
-four imaging modalities: structural images (T1w and T2w), resting-state fMRI (rfMRI),
+four imaging modalities: structural images (T1w and T2w), resting-state fMRI
+(rfMRI),
 task-fMRI (tfMRI), and high angular resolution diffusion imaging (dMRI). It
 further includes behavioral and other individual subject measure data for all,
 and MEG data and 7T MR data for a subset of subjects (twin pairs).
 
 ## Data access and retrieval with DataLad
 
-To retrieve HCP Open Access data via DataLad with this dataset, you need to agree
+To retrieve HCP Open Access data included in this dataset via DataLad, you need to agree
 to the [WU-Minn HCP Consortium Open Access Data Use Terms](./DATA_USE_AGREEMENT.md)
 and obtain valid AWS credentials:
 
@@ -42,12 +67,8 @@ will retrieve data without asking them again.
 
 ## Dataset structure
 
-Each ``HCP1200/`` subject directory in this dataset is a DataLad subdataset. The
-command `datalad get -n <subject-id>` clones this subdataset and allows to
-access this subjects release notes (subdirectory `release-notes`). Within each
-subject's subdataset, one DataLad subdataset exists for each additional
-available subdirectory (e.g., ``MEG``, ``T1w``, etc., as far as available
-for the particular subject).
+Unlike the [full HCP open access DataLad dataset](https://github.com/datalad-datasets/human-connectome-project-openaccess),
+this repository is a single dataset without any subdatasets.
 
 If you have never used [DataLad](https://www.datalad.org/) before, please read the
 section on DataLad datasets below.
