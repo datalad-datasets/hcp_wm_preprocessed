@@ -2,7 +2,7 @@
 
 [![made-with-datalad](https://www.datalad.org/badges/made_with.svg)](https://datalad.org)
 
-This dataset enables data retrieval with DataLad (0.12.2 or later) from a subset
+This dataset enables data retrieval with DataLad from a subset
 of the [HCP Open Access dataset](https://registry.opendata.aws/hcp-openaccess/) for users
 that accepted the WU-Minn HCP Consortium Open Access Data Use Terms and obtained
 valid AWS credentials via [db.humanconnectome.org](http://db.humanconnectome.org).
