@@ -53,6 +53,7 @@
 1593865765.510577325s 1 :s3://hcp-openaccess/HCP_1200/101006/MNINonLinear/Results/rfMRI_REST2_RL/ReclassifyAsNoise.txt?versionId=rEyIzGfxo5JnEcgzEoGtASLXt7E0HOJZ
 1645844432.972710516s 1 :s3://hcp-openaccess/HCP_1200/101006/MNINonLinear/Results/rfMRI_REST2_RL/ReclassifyAsSignal.txt
 1593865766.225733985s 1 :s3://hcp-openaccess/HCP_1200/101006/MNINonLinear/Results/rfMRI_REST2_RL/ReclassifyAsSignal.txt?versionId=lnLkRecyAWAeS8FhnMK_YryH0OW.uGBQ
+1645844435.2956952s 1 :s3://hcp-openaccess/HCP_1200/101006/MNINonLinear/Results/tfMRI_SOCIAL_RL/EVs/mental_resp.txt
 1593865766.942573013s 1 :s3://hcp-openaccess/HCP_1200/101006/MNINonLinear/Results/tfMRI_SOCIAL_RL/EVs/mental_resp.txt?versionId=9Shjw3SYh.KwCko3tkGvSPV6o2c3B1F9
 1593865767.658586122s 1 :s3://hcp-openaccess/HCP_1200/101006/MNINonLinear/Results/tfMRI_WM_LR/EVs/0bk_nlr.txt?versionId=l8LEJnFyJzz9PW.yujMARqGDMC3.xBBm
 1593865768.400342184s 1 :s3://hcp-openaccess/HCP_1200/101006/MNINonLinear/Results/tfMRI_WM_LR/EVs/2bk_nlr.txt?versionId=OIbCQKRaw.DDaj842T80.F8b4d0G.SVE
